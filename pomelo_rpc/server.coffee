@@ -1,4 +1,4 @@
-Server = require("pomelo-rpc").server
+Server = require("pomelo-rpc-zeromq").server
 
 # remote service path info list
 paths = [

@@ -1,4 +1,4 @@
-Client = require("pomelo-rpc").client
+Client = require("pomelo-rpc-zeromq").client
 
 # remote service interface path info list
 records = [

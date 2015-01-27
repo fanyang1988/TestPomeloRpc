@@ -9,6 +9,7 @@
   "author": "fanyang",
   "license": "ISC",
   "dependencies": {
-    "pomelo-rpc": "^0.4.6"
+    "pomelo-rpc": "^0.4.6",
+    "pomelo-rpc-zeromq": "0.0.8"
   }
 }
