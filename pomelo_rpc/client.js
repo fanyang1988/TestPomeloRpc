@@ -42,11 +42,13 @@ client.start(function(err) {
   console.log("rpc client start ok.");
   client.addProxies(records);
   client.addServers(servers);
-  client.proxies.user.test.service.echo(routeParam, "hello", function(err, resp) {
-    if (err) {
-      console.error("err stack " + err);
-    }
-    console.log("resp");
-    console.log(resp);
-  });
+  setInterval(function() {
+    client.proxies.user.test.service.echo(routeParam, "hello", function(err, resp) {
+      if (err) {
+        console.error("err stack " + err);
+      }
+      console.log("resp");
+      console.log(resp);
+    });
+  }, 100);
 });
