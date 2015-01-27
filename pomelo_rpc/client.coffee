@@ -37,7 +37,7 @@ client.start (err) ->
   client.addProxies records
   client.addServers servers
   client.proxies.user.test.service.echo routeParam, "hello", (err, resp) ->
-    console.error err.stack  if err
+    console.error "err stack " + err  if err
     console.log "resp"
     console.log resp
     return
