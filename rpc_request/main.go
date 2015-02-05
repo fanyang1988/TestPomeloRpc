@@ -7,6 +7,9 @@ import (
     "time"
 )
 
+// add by b2
+//
+
 func main() {
     context, _ := zmq.NewContext()
     defer context.Close()
