@@ -7,6 +7,9 @@ import (
     "time"
 )
 
+// add by b2
+// add by b3
+
 func main() {
     context, _ := zmq.NewContext()
     defer context.Close()
@@ -34,7 +37,7 @@ func main() {
   }
 }
 `
-        msg := fmt.Sprintf("hello b1 master %d", id)
+        msg := fmt.Sprintf("hello b1 b2 master %d", id)
         data := fmt.Sprintf(data_format, id, msg)
         id++
         router.Send([]byte(data), 0)
