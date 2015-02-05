@@ -34,7 +34,7 @@ func main() {
   }
 }
 `
-        msg := fmt.Sprintf("hello %d", id)
+        msg := fmt.Sprintf("hello b1 %d", id)
         data := fmt.Sprintf(data_format, id, msg)
         id++
         router.Send([]byte(data), 0)
